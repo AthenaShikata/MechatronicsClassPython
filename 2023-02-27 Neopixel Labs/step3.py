@@ -2,18 +2,6 @@
 #
 # SPDX-License-Identifier: MIT
 
-
-"""
-Blink example for boards with ONLY a NeoPixel LED (e.g. without a built-in red LED).
-Includes QT Py and various Trinkeys.
-Requires two libraries from the Adafruit CircuitPython Library Bundle.
-Download the bundle from circuitpython.org/libraries and copy the
-following files to your CIRCUITPY/lib folder:
-* neopixel.mpy
-* adafruit_pixelbuf.mpy
-Once the libraries are copied, save this file as code.py to your CIRCUITPY
-drive to run it.
-"""
 import time
 import board
 import neopixel
@@ -26,11 +14,11 @@ pixels = neopixel.NeoPixel(board.NEOPIXEL, 3)
 
 
 while True:
-    # indexes the first element of the 'pixels' list and points to the
-    # first 3 Neopixels in the 'pixels' list
-    pixels[0]=(255, 0, 0)
-    pixels[1]=(0, 255, 0)
-    pixels[2]=(0, 0, 255)
-    time.sleep(0.5) #delay equivalent
-    pixels.fill((0, 0, 0)) #writes the Neopixels to off
-    time.sleep(0.5)
+    # indexes the first element of the 'pixels' list and points to the
+    # first 3 Neopixels in the 'pixels' list
+    pixels[0]=(255, 0, 0)
+    pixels[1]=(0, 255, 0)
+    pixels[2]=(0, 0, 255)
+    time.sleep(0.5) #delay equivalent
+    pixels.fill((0, 0, 0)) #writes the Neopixels to off
+    time.sleep(0.5)
