@@ -1,2 +1,2 @@
-print("pooop")
-print("pooop2")
+print("poop")
+print("poop2")
