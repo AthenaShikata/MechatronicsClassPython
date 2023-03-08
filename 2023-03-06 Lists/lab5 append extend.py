@@ -25,11 +25,18 @@ print(fibonacci_sequence)
 fibonacci_sequence.append(fibonacci_sequence[0]+fibonacci_sequence[1])
 print(fibonacci_sequence)
 # Use the .append to add the next number in the sequence.
-
+fibonacci_sequence.append(fibonacci_sequence[2]+fibonacci_sequence[1])
 print(fibonacci_sequence)
 # Use a for loop to calculate and .append 10 more of the next numbers in the sequence
-
+for i in range(3,13):
+    fibonacci_sequence.append(fibonacci_sequence[i-1]+fibonacci_sequence[i])
+    print(fibonacci_sequence)
 print(fibonacci_sequence)
 # Use a for loop to calculate and .extend 10 more of the next numbers in the sequence
-
+x=[144,233]
+for i in range (1,11):
+    x.append(x[i]+x[i-1])
+x.remove(144)
+x.remove(233)
+fibonacci_sequence.extend(x)
 print(fibonacci_sequence)
