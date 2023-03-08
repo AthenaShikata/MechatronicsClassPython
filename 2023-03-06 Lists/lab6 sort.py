@@ -13,15 +13,19 @@ On the following lists, use the sort(), pop(), del, remove() methods
 my_list = ["H", "e", "l", "l", "o", " ", "W", "o", "r", "l", "d",]
 print(my_list)
 # use sort()
-
+my_list.sort()
 print(my_list)
+
+print('')
 
 # pop()
 my_list = ["STEAM", "Clown", "Productions"]
 print(my_list)
 # use pop()
-
+my_list.pop(0)
 print(my_list)
+
+print('')
 
 # del
 my_list = ["apple", "orange", "pomegranate", "pineapple"]
@@ -30,9 +34,11 @@ print(my_list)
 del my_list[1]
 print(my_list)
 
+print('')
+
 # remove() "Shadow"
 my_list = ["Centauri", "Minbari", "Narn", "Human", "Shadow", "Vorlon"]
 print(my_list)
 # use remove()
-
+my_list.remove("Narn")
 print(my_list)
