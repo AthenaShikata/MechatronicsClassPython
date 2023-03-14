@@ -35,7 +35,7 @@ def sum_and_avg(t):
     l=len(t)
     for i in range(l):
         s += t[i]
-    a=s/3
+    a=s/l
     return (s,a)
 
 tu = (19, 25, 42,)
