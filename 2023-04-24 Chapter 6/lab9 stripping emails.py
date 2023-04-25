@@ -26,4 +26,12 @@ You want output like:
       ''')
 # add your code below this line
 
-print(myEmailString.split())
+myEmails = []
+myList = myEmailString.split()
+print(myList)
+print('')
+for i in myList:
+   x = i.find('@')
+   if x > 1: #1 sorts out random @ characters so that the @ must be within the word itself
+      myEmails.append(i)
+print(myEmails)
