@@ -6,25 +6,33 @@ printing the file handle.
 Hint: Check out W3Schools File Handling
 - https://www.w3schools.com/python/python_file_handling.asp
       ''')
-# -----------------------------
+# Challenge 1
+# Describe the parts of the file handle
 print('''
-Challenge
+Challenge # 1
 ----------------------------------------------------
+Can you explain each part of the file handle? 
 
-What happends if the file does not exist? 
-- Try opening a file that does not exist... 
-Like "matrix2.txt"
-
-Can you open a diffrent file? 
-- Try opening the file "mbox-short.txt"
+What does the following parts of the file handle mean?
+1) _io.TextIOWrapper - the file type of the handle
+2) name='matrix.txt' - the name of the file to be opened
+3) mode='r'  - open file in read or write mode
+4) encoding='UTF-8'> - the encoding type of the file handle
+      
+Hint: https://www.w3schools.com/python/python_file_handling.asp
 ---
 ''')
 # -------------------------------------------------
-print('''Answer to Challenge
+print('''Answer to Challenge 1
 -------------------------------------------------''')
-# Try opening a file that does not exist... Like "matrix2.txt"
+# What does the following parts of the file handle mean?
+# 1) _io.TextIOWrapper 
+# 2) name='matrix.txt' 
+# 3) mode='r' 
+# 4) encoding='UTF-8'>
+# print('The parts of a file handle are:')
+# -----------------------------
 xfile = open('matrix.txt')
 print(xfile)
 print('''
 -------------------------------------------------''')
-
