@@ -23,15 +23,12 @@ mbox-medium.txt befor you try mbox.txt
 # Add Your Code Here:
 count = 0
 email_list=[]
-xfile = open('mbox-short.txt')
+xfile = open('mbox.txt')
 print(xfile)
 print('')
 for line in xfile:
     line = line.rstrip()
-    if line.startswith('From: '):
-        line_items = line.split()
-        if line_items[1].find('@') != -1:
-            print(line_items[1])
     line_items = line.split()
-    if line_items[1].find('@') != -1:
-        check
+    for i in line_items:
+        if i.find('@') != -1:
+            print(i.strip('<>();'))
