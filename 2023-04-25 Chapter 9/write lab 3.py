@@ -64,7 +64,7 @@ for line in xfile1:
     #print(line_items)
     line_items = line_items.split(',')
     #print(line_items)
-    if line_items[1] == "rgb-led" :
+    if line_items[1] == 'rgb-led' :
         if line_items[2] in colors_Allow:
             xfile2.write(line)
         elif line_items[2] in colors_Disallow:
